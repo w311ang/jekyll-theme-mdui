@@ -1,11 +1,10 @@
 - name: bilibili
-  url: 
-
+  url: https://space.bilibili.com/318027189
 - name: facebook
   url: 
 
 - name: github
-  url: https://github.com
+  url: https://github.com/w311ang
 
 - name: gplus
   url: 
@@ -17,13 +16,13 @@
   url: 
 
 - name: telegram
-  url: https://web.telegram.org
+  url: https://t.me/w311ang
 
 - name: tumblr
   url: 
 
 - name: twitter
-  url: https://twitter.com/
+  url: 
 
 - name: weibo
   url: 
