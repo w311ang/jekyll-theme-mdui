@@ -60,7 +60,7 @@ prism:
 
 google_analytics: ""  # google analytics code
 
-lang: "en-US"  # lang
+lang: "zh-CN"  # lang
 
 deploy: "" # if you used coding pages
 
