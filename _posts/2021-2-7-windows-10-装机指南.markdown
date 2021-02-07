@@ -1,0 +1,549 @@
+---
+layout: post
+title: Windows 10 装机指南
+date: 2019-10-13 22:47:32 +0800
+categories: technology
+tags: 
+img: 
+---
+***电脑阅览更佳，手机建议横屏食用。***
+
+## 准备工作（「　 」表示必要）
+
+- 准备安装密钥
+- 使用软碟通将 ISO 光盘映像刻录到 U 盘
+- BIOS 启用虚拟化
+- 导出 Chrome 书签（或前往 chrome://version 将整个用户资料备份）
+- 使用 Total Uninstall 备份完整插件的 VB。
+- Total Uninstall 导出已安装程序
+
+### 配置分区（非UEFI引导可跳过）
+
+1. 打开 DiskGenius*（推荐使用微 PE）*
+2. 将需要安装 Windows 的硬盘转换为 GUID 格式*（**转换有风险，建议备份后再转换。**）*
+3. 选中需要安装 Windows 的硬盘的空闲区域
+4. 右键建立一个 100MB 的 EFI system partition 分区
+5. 再建立一个 NTFS 分区
+
+## 开始安装
+
+- 输入安装密钥后继续安装*（**不输入可能会导致激活失败**）*
+- 重启时进入 PE 设置安装盘为 NTFS 压缩并重命名其盘标为 **系统**
+
+### OOBE（初始化界面）
+
+- 不设置账户的密码
+
+## 进入桌面
+
+- 运行 compmgmt.msc 设置你的账户别名和密码*（并配置硬盘）*
+- 更新 Windows 系统
+- 使用 W10 数字许可激活 C# 版激活系统*（数字激活失败可尝试 KMS38 激活）*
+- 启用 Windows 功能
+
+[x].NET Framework 3.5
+
+- 安装 Java 和微软常用运行库合集
+- 使用驱动精灵（单文件版）安装并升级驱动**（待完成后重启计算机）*
+- 调整账户文件夹#
+- 使用 Destroy Windows 10 Spying 禁用 Windows 10 的隐私采集
+
+# 设置选项卡
+
+[ ]创建系统还原点
+[x]删除键盘记录程序和遥测程序
+[ ]添加监视域名到 HOSTS 文件，并在 Windows 防火墙中添加阻止规则
+[x]禁用隐私设置
+[x]禁用 Windows Defender
+[x]设置默认的 Windows 照片查看器
+[x]禁用监视计划任务
+[ ]删除 Windows10 的 Metro 应用
+...
+
+[x]开启专业模式
+
+### 设置
+
+- 账户 - 登录选项 - 隐私 - - [ ] 更新或重启后，使用我的登录信息自动完成设备设置并重新打开我的应用。
+- 更新和安全 - 传递优化 - 允许从其他电脑下载 - - [ ] 允许从其他电脑下载
+- 输入法启用全部模糊音
+
+### 组策略（gpedit.msc）
+
+- 计算机配置 \ 管理模板 \ Windows 组件 \ Windows 安全中心 \ Systray \ - [X] 隐藏 Windows 安全系统托盘
+- 计算机配置 \ Windows 设置 \ 安全设置 \ 本地策略 \ 安全选项 \ [用户不能添加 Microsoft 帐户或使用该帐户登录]帐户: 阻止 Microsoft 帐户
+- 计算机配置 \ 管理模板 \ Windows 组件 \ Windows Defender Smartscreen \ Microsoft Edge \ - [ ] 配置 Windows Defender Smartscreen
+- 计算机配置 \ 管理模板 \ Windows 组件 \ Windows Defender Smartscreen \ 资源管理器 \ - [ ] 配置 Windows Defender Smartscreen
+- 计算机配置 \ 管理模板 \ Windows 组件 \ Windows Defender Smartscreen \ 资源管理器 \ - [ ] 配置应用安装控制
+- 计算机配置 \ 管理模板 \ 控制面板 \ 个性化 \ - [X] 不显示锁屏
+
+### 注册表（regedit）
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace
+
+- <s>\{374DE290-123F-4565-9164-39C4925E467B}</s>*（下载文件夹）*
+- <s>\{088e3905-0323-4b02-9826-5d99428e115f}</s>
+- <s>\{1CF1260C-4DD0-4ebb-811F-33C572699FDE}</s>*（音乐文件夹）*
+- <s>\{3dfdf296-dbec-4fb4-81d1-6a3438bcf4de}</s>
+- <s>\{3ADD1653-EB32-4cb0-BBD7-DFA0ABB5ACCA}</s>*（图片文件夹）*
+- <s>\{24ad3ad4-a569-4530-98e1-ab02f9417aa8}</s>
+- <s>\{A0953C92-50DC-43bf-BE83-3742FED03C9C}</s>*（视频文件夹）*
+- <s>\{f86fa3ab-70d2-4fc7-9c99-fcbf05467f3a}</s>
+- <s>\{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}</s>*（3D 对象文件夹）*
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace
+
+- <s>\{374DE290-123F-4565-9164-39C4925E467B}</s>*（下载文件夹）*
+- <s>\{088e3905-0323-4b02-9826-5d99428e115f}</s>
+- <s>\{1CF1260C-4DD0-4ebb-811F-33C572699FDE}</s>*（音乐文件夹）*
+- <s>\{3dfdf296-dbec-4fb4-81d1-6a3438bcf4de}</s>
+- <s>\{3ADD1653-EB32-4cb0-BBD7-DFA0ABB5ACCA}</s>*（图片文件夹）*
+- <s>\{24ad3ad4-a569-4530-98e1-ab02f9417aa8}</s>
+- <s>\{A0953C92-50DC-43bf-BE83-3742FED03C9C}</s>*（视频文件夹）*
+- <s>\{f86fa3ab-70d2-4fc7-9c99-fcbf05467f3a}</s>
+- <s>\{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}</s>*（3D 对象文件夹）*
+
+HKEY_CLASSES_ROOT\*\shellex\ContextMenuHandlers
+
+- <s>\ModernSharing</s>*（右键分享）*
+
+HKEY_CLASSES_ROOT\Folder\ShellEx\ContextMenuHandlers
+
+- <s>\Library Location</s>*（右键包含到库）*
+
+HKEY_CLASSES_ROOT\exefile\shellex\ContextMenuHandlers
+
+- <s>\Compatibility</s>*（右键兼容性疑难解答）*
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Folder\shellex\ContextMenuHandlers
+
+- <s>\PintoStartScreen</s>*（右键固定到开始菜单）*
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Classes\exefile\shellex\ContextMenuHandlers
+
+- <s>\PintoStartScreen</s>*（右键固定到开始菜单）*
+
+HKEY_CLASSES_ROOT\AllFilesystemObjects\shellex\ContextMenuHandlers
+
+- <s>\{596AB062-B4D2-4215-9F74-E9109B0A8153}</s>*（右键还原到以前的版本）*
+
+HKEY_CLASSES_ROOT\CLSID\{450D8FBA-AD25-11D0-98A8-0800361B1103}\shellex\ContextMenuHandlers
+
+- <s>\{596AB062-B4D2-4215-9F74-E9109B0A8153}</s>*（右键还原到以前的版本）*
+
+HKEY_CLASSES_ROOT\Directory\shellex\ContextMenuHandlers
+
+- <s>\{596AB062-B4D2-4215-9F74-E9109B0A8153}</s>*（右键还原到以前的版本）*
+
+HKEY_CLASSES_ROOT\Drive\shellex\ContextMenuHandlers
+
+- <s>\{596AB062-B4D2-4215-9F74-E9109B0A8153}</s>*（右键还原到以前的版本）*
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked
+
+- {F81E9010-6EA4-11CE-A7FF-00AA003CA9F6}*（右键授予访问权限）*
+
+Windows Registry Editor Version 5.00
+[HKEY_CLASSES_ROOT\Directory\shell\OpenCmdHere]
+@="在此处打开命令窗口"
+"Icon"="cmd.exe"
+[HKEY_CLASSES_ROOT\Directory\shell\OpenCmdHere\command]
+@="cmd.exe /s /k pushd "%V""
+[HKEY_CLASSES_ROOT\Directory\Background\shell\OpenCmdHere]
+@="在此处打开命令窗口"
+"Icon"="cmd.exe"
+[HKEY_CLASSES_ROOT\Directory\Background\shell\OpenCmdHere\command]
+@="cmd.exe /s /k pushd \"%V\""
+[HKEY_CLASSES_ROOT\Drive\shell\OpenCmdHere]
+@="在此处打开命令窗口"
+"Icon"="cmd.exe"
+[HKEY_CLASSES_ROOT\Drive\shell\OpenCmdHere\command]
+@="cmd.exe /s /k pushd \"%V\""
+[HKEY_CLASSES_ROOT\LibraryFolder\background\shell\OpenCmdHere]
+@="在此处打开命令窗口"
+"Icon"="cmd.exe"
+[HKEY_CLASSES_ROOT\LibraryFolder\background\shell\OpenCmdHere\command]
+@="cmd.exe /s /k pushd \"%V\""
+*（右键在此处打开命令窗口）*
+Windows Registry Editor Version 5.00
+[HKEY_CLASSES_ROOT\*\shellunas]
+@="管理员取得所有权"
+"NoWorkingDirectory"=""
+[HKEY_CLASSES_ROOT\*\shellunas\command]
+@="cmd.exe /c takeown /f \"%1\" && icacls \"%1\" /grant administrators:F"
+
+"IsolatedCommand"="cmd.exe /c takeown /f \"%1\" && icacls \"%1\" /grant administrators:F"
+
+[HKEY_CLASSES_ROOT\exefile\shellunas2]
+@="管理员取得所有权"
+"NoWorkingDirectory"=""
+[HKEY_CLASSES_ROOT\exefile\shellunas2\command]
+@="cmd.exe /c takeown /f \"%1\" && icacls \"%1\" /grant administrators:F"
+
+"IsolatedCommand"="cmd.exe /c takeown /f \"%1\" && icacls \"%1\" /grant administrators:F"
+
+[HKEY_CLASSES_ROOT\Directory\shellunas]
+@="管理员取得所有权"
+"NoWorkingDirectory"=""
+[HKEY_CLASSES_ROOT\Directory\shellunas\command]
+
+@="cmd.exe /c takeown /f \"%1\" /r /d y && icacls \"%1\" /grant administrators:F /t"
+
+"IsolatedCommand"="cmd.exe /c takeown /f \"%1\" /r /d y && icacls \"%1\" /grant administrators:F /t"
+
+*（右键管理员取得所有权）*
+
+### 桌面
+
+- （右键）- 查看 - 小图标
+- （右键）- 个性化 - 主题 - 桌面图标设置 - 桌面图标 - 桌面图标 - - [X] 计算机
+- （右键）- 个性化 - 主题 - 桌面图标设置 - 桌面图标 - 桌面图标 - - [X] 回收站
+- （右键）- 个性化 - 主题 - 桌面图标设置 - 桌面图标 - 桌面图标 - - [X] 用户的文件
+- （右键）- 个性化 - 主题 - 桌面图标设置 - 桌面图标 - 桌面图标 - - [X] 控制面板
+- （右键）- 个性化 - 主题 - 桌面图标设置 - 桌面图标 - 桌面图标 - - [X] 网络
+
+### 任务管理器（taskmgr）
+
+- 详细信息
+
+查看 - 更新速度 - 高
+
+- 选项 - - [X] 置于顶层
+- CPU ↓
+
+### Windows Media Player
+
+- 将文件转换临时存储目录的快捷方式放到 **文档** 的 **Windows Media Player** 中
+
+### 文件资源管理器（explorer）
+
+- 文件复制时详细信息
+- 常规 - 隐私 - - [ ] 在“快速访问”中显示最近使用的文件
+- 常规 - 隐私 - - [ ] 在“快速访问”中显示常用文件夹<br><br>
+- 快速访问固定常用文件夹并清除历史记录
+- HashTab
+
+[HashTab32-6.0.0.34.dll](:/a22ccaff016a139115615a2d7c7bd671)[HashTab64-6.0.0.34.dll](:/bba252868e4e2f03ac234a62e51a8cc0)[启用HashTab.bat](:/e6af61d105350af0bce683983dc11c6f)
+
+- QTTabBar
+- OldNewExplorer
+- 设置 Flat Plat 主题*（需破解第三方主题）*
+- 搜索 - 在搜索未建立索引的位置时 - - [X] 始终搜索文件名和内容(此过程可能需要几分钟)
+
+### 任务栏
+
+- （右键）- - [ ] 在任务栏上显示人脉
+- （右键）- - [ ] 显示“任务视图”按钮
+- （右键）- 搜索 - 隐藏
+- （右键）- 任务栏设置 - 通知区域 - 打开或关闭系统图标
+
+[x]时钟
+[x]音量
+[x]网络
+[x]电源
+[x]输入指示
+[x]定位
+[ ]操作中心
+[ ]触摸键盘
+[ ]Windows Ink 工作区
+[ ]触摸板
+
+- （右键）- 任务栏设置 - 通知区域 - 选择哪些图标显示在任务栏上 - - [X] 通知区域始终显示所有图标
+- 只分别固定文件资源管理器和 Chrome
+
+### Internet Explorer
+
+- （右键）- - [ ] 在单独一行上显示标签页
+- 默认下载位置更改为 **文档**
+- 工具栏、扩展、搜索提供程序和加速器尽量停用或删除
+- 工具 - 安全 - 启用”禁止跟踪“请求
+- 不停用加载项以提升打开速度
+- 将 Internet 临时文件目录的快捷方式放到 **文档** 的 **Internet Explorer** 中
+- 工具 - Internet 选项 - 常规 - 外观 - 语言 - 前缀和后缀选项 - - [X] 请勿将 "www" 添加到所键入 Web 地址的开头
+
+### 记事本（notepad）
+
+- 格式 - 自动换行
+
+### 截图工具
+
+- 隐藏 **截图工具正在移动...**
+- 选项 - - [X] 退出前提示保存截图
+- 模式 - 窗口截图
+
+### QTTabBar
+
+- Internet Explorer 启用其扩展
+- 资源管理器应用其扩展
+- 安装简体语言包
+- 关闭多余的 Internet Explorer 空白窗口
+- 标签设置 - 常规 - - [X] 添加"+"按钮到标签栏
+- 标签设置 - 关闭按钮，图标，锁定 - - [X] 在标签上显示关闭按钮
+- 标签设置 - 关闭按钮，图标，锁定 - 锁定标签行为 - - [X] 防止窗口被关闭
+- 标签设置 - 关闭按钮，图标，锁定 - - [X] 按 Ctrl + Tab 显示标签切换器
+- 窗口行为 - 捕获和排除列表 - 捕获窗口 - - [X] 使用 ShellExecuteHooks 捕获窗囗的(专业，需注销重新登录)
+- 常规选项 - 更新 - - [X] 提示找到更新
+
+### OldNewExplorer
+
+- 状态 - 安装
+- 窗口样式 - - [X] 在底部显示详细信息栏
+- 窗口样式 - - [ ] 隐藏返回上级目录按钮
+
+### StartIsBack
+
+- 使用 Windows 10 默认图标和开始菜单
+- 15% 任务栏透明度
+- 『开始』菜单 - 要显示的最近程序的数量：0
+- 高级 - - [ ] 不预启动进程 SearchUI 和 ShellExperienceHost
+
+### 英特尔® 显卡控制中心
+
+### 磁盘碎片整理
+
+- 更改电源高级设置和电源按钮功能
+
+# 电源高级设置
+
+硬盘
+　　在此时间后关闭硬盘
+　　　　设置: 10 分钟
+...
+睡眠
+　　在此时间后睡眠
+　　　　设置: 5 分钟
+　　允许混合睡眠
+　　　　设置: 关闭
+　　在此时间后休眠
+　　　　设置: 30 分钟
+　　允许使用唤醒定时器
+　　　　设置: 禁用
+...
+显示
+　　在此时间后关闭显示
+　　　　设置: 1 分钟
+
+# 电源按钮功能
+
+...
+按电源按钮时: 休眠
+...
+
+- 禁用 IPv6
+- 开启鼠标阴影
+- 禁止远程连接
+- 配置声音
+
+# 播放 - 扬声器 - 属性 - 高级
+
+默认格式
+　　24位, 192000Hz (录音室音质)　（最高采样率）
+
+# 通信
+
+当 Windows 检测到通信活动时:
+　　...
+　　[x]不执行任何操作
+
+- 将 Java 的临时 Internet 文件目录的快捷方式放到 **文档** 中
+- 将红外线的接收文件和图像传送目录的快捷方式放到 **文档** 的 **红外线** 中
+- 请再根据个人喜好设置别的配置，如修改计算机名等。%
+
+## 安装软件!
+
+### Adobe
+
+- 关闭杀毒软件再安装
+- 推荐安装大师版
+- Acrobat DC 浏览器插件安装
+- 文档中的文件夹更改为创意云图标
+- Chrome - Adobe Acrobat 选项 - - [ ] 允许 Adobe Acrobat for Chrome 将匿名使用情况信息发送给 Adobe 以用作产品改进目的。
+
+### Chrome
+
+- Stylish 禁止收集隐私
+- AC-Baidu 油猴插件无图标显示为 **#**
+
+### Microsoft Office
+
+- Office Tool Plus 下载最新版*（需比较通道版本）*
+- 安装完成后更改更新通道为下载时选择的通道
+- 转换为 Vol 版后使用 HEU KMS Renewal 激活，并在计划任务中将定时激活任务的操作命令除去 **/windows**。
+- 安装 EasyCharts、iSlide、PPT美化大师、口袋动画和方方格子
+- 选项 - 领英功能 -  - [ ] 在我的 Office 应用程序中启用领英功能
+- **文档** 中的文件夹更改为 Word 图标
+- 打开 Office 时忽略杀毒软件的报毒
+- 将自动恢复文件位置更改为 **文档** 中的 **Microsoft Office** 文件夹*（各组件在 ****Microsoft Office**** 内分文件夹存放）*
+- 禁用 Internet Explorer 中的扩展
+- 口袋动画点掉所有红点并设置不自动启动设计工具
+- 在自定义功能区添加开发工具并移除帮助
+- **文档** 中自定义 Office 模板备注文档
+- 选项 - 对 Microsoft Office 进行个性化设置 - 用户名:
+- 选项 - 对 Microsoft Office 进行个性化设置 - 缩写:
+- 选项 - 对 Microsoft Office 进行个性化设置 -  - [X] 不管是否登录到 Office 都始终使用这些值。
+- - [X] 默认折叠顶部搜索框
+
+### 火绒
+
+- 安装最新 5.0 版本
+- 将托盘图标放在托盘最右
+- 忽略 QTTabBar 右键错误
+- 始终允许 HEU KMS Renewal 的自动激活计划任务
+- 酷我音乐 **ksdll.exe** 永久拒绝一切请求
+- 安装并配置完整插件后首次进入 Office 时，一切请求皆允许；再次进入一切请求皆始终允许
+
+### 绿色软件
+
+- 将绿色软件的快捷方式放入开始菜单内，并重命名为***（软件名称）* 🍀**。
+- 初始化/配置绿色软件，并酌情更新需要更新的绿色软件。
+
+安装完 Total Uninstall 导出的已安装软件列表中的软件后继续
+
+### WinRAR
+
+- 安装 ArchLinux 2018 48×48 主题
+- 选项 - 设置 - 集成 - - [X] 层叠的上下文菜单
+- 选项 - 设置 - 集成 - - [X] 上下文菜单里的图标
+- 选项 - 设置 - 文件列表 - - [X] 显示秒
+- （工具栏右键）- - [X] 锁定工具栏
+- 下载最新的中国版后去除广告
+
+### 软碟通
+
+- 安装时拔出所有 U 盘
+- 选项 - - [ ] 打开音效
+- 选项 - - [ ] 显示本地资源浏览器
+
+### TeamViewer
+
+- 懒得勤快破解版
+
+### Fiddler
+
+- 大眼仔完美汉化版
+
+### Sandboxie
+
+- 卡饭论坛去暗桩驱动
+
+### Internet Download Manager
+
+- 最后连接时间 ↓
+- 工具栏去除告诉朋友
+- 启用 Internet Explorer 和 Chrome 中的扩展
+- 安装 Pure Flat 工具栏
+
+### Total Uninstall
+
+- 安装时间 ↓
+
+### VMware Workstation Pro
+
+- 通过注册机生成的序列号激活
+- 解锁 macOS 系统
+
+### Downloader
+
+- 将插件添加到 Chrome
+
+### Notepad++
+
+- 设置 - 首选项... - 常用 - - [X] 关闭最后一个标签时退出
+- 设置 - 首选项... - 最近文件记录 - 最近文件记录 - 显示 - 仅文件名
+- 设置 - 首选项... - 搜索引擎 - 搜索引擎(用于“在线搜索”操作) - 设定你的搜索引擎: https://www.baidu.com/s?wd=$(CURRENT_WORD)
+- 视图 - - [X] 自动换行
+- 设置 - 首选项... - 新建 - 新建文档 - 编码 - - [ ] 应用于打开 ANSI 文件
+- 关联一些文件扩展名
+
+### PanDownload
+
+- 添加双账号共存
+
+### WO Mic
+
+- - [X] 自动连接
+- 设置 - 隐私 - 麦克风 - - [X] 允许应用访问你的麦克风
+
+### QQ
+
+- 使用 Dreamcast 大大修改的最新版
+- NtrQQ 配置
+
+### 酷我音乐
+
+- 文件资源管理器删除 **酷我音乐** 驱动器
+
+### LockHunter
+
+- 右键解锁文件
+- 安装汉化版本
+
+### 小丸工具箱
+
+### PotPlayer
+
+- 主菜单 - 选项... - 基本 - 基本设置 - 相似文件策略：同时打开全部文件
+- 主菜单 - 选项... - 基本 -  基本设置 -   多重处理方式：单个进程即选即播
+- 主菜单 - 选项... - 基本 -  基本设置 -   自动更新：- - [ ] 预先下载更新文件
+- 主菜单 - 选项... - 基本 -  基本设置 - [-]最小化时暂停/还原时播放
+- 主菜单 - 选项... - 基本 - 鼠标 - 鼠标设置 - 左键单击：播放|暂停
+- 主菜单 - 选项... - 基本 - 鼠标 - 鼠标设置 - 左键双击：全屏|默认尺寸
+- 主菜单 - 选项... - 播放 - 播放设置 - 播放窗口尺寸：100% 尺寸
+- 主菜单 - 选项... - 播放 - 播放设置 - - [X] 记忆视频播放位置
+- 主菜单 - 选项... - 播放 - 播放设置 - - [X] 鼠标指向进度条时显示缩略图
+- 主菜单 - 选项... - 播放 - 播放设置 - - [X] 鼠标在进度条上时显示时间
+- 主菜单 - 选项... - 播放 - 时间跨度 - 定位时间设置 - 左/右 方向键：1
+- 主菜单 - 选项... - 播放 - 全屏 - 全屏设置 - 次全屏显示设备：- - [X] 以全屏独占模式输出到显示器
+- 主菜单 - 选项... - 播放 - 宽高比 - 宽高比 - - [X] 缩放窗囗时保持宽高比
+- 主菜单 - 选项... - 滤镜 - 视频解码器 - 视频解码器 - 内置解码器/DXVA 设置 - 硬件加速(DXVA)设置 - - [X] 使用硬件加速 (DXVA)
+- 主菜单 - 选项... - 声音 - 规格化/混响 - 规格化 - - [ ] 播放时开启规格化
+- 主菜单 - 选项... - 关联 - 关联扩展名设置 - 图标：PotIconsNew.dll
+- 主菜单 - 选项... - 关联 - 关联扩展名设置 - 全选
+- 主菜单 - 选项... - 关联 - 关联扩展名设置 - - [ ] 显示播放列表菜单
+- 主菜单 - 选项... - 关联 - 关联扩展名设置 - - [ ] 显示播放菜单
+- 主菜单 - 视频 - 图像截取 - - [X] 同时截取字幕(如果有)
+- 将主菜单 - 选项... - 存档目录的快捷方式放到 **文档** 的 **PotPlayer** 中
+
+清理回收站并在 Total Uninstall 执行程序扫描器的扫描和清理
+
+***Enjoy! 享受你的新系统吧！***
+
+## 附录
+
+### 运行权限
+
+- 当前文件夹所有子文件夹改为默认运行权限
+
+for /r %f in (*) do chml "%f" -rl
+
+- 当前文件夹所有文件改为默认运行权限
+
+for /r %f in (\) do chml "%f" -rl
+
+* * *
+
+*：驱动精灵可能会造成不限于服务、注册表 和 系统临时文件夹的残留，建议在 Sandboxie 中下载驱动再安装到系统。
+
+#：将账户文件夹下的 **文档** 和 **桌面** 更改到非系统盘下的***（账户名）***文件夹，其它文件夹全部 mklink 到***（账户名）***文件夹下新建的 **Other** 文件夹，再将 **Other** 的快捷方式放入 **文档** 中，并命名为 **其它**。并且建议将 **文档** 按照表 1 格式化，子目录按照表 2 格式化。
+
+!：在每个软件安装完成后，均需查看 Internet Explorer、Chrome*（插件）*、文档、任务管理器*（启动项）* 和 软件*（保存目录）*是否有需要操作的操作。建议按教程配置完成后再个人手动配置一遍。必备软件有：*（浏览器）*、Internet Download Manager、WinRAR、7-Zip、Office、Adobe、软碟通、Notepad++ 和 PotPlayer。
+
+%：禁止设置的后台任务也会禁止所有通知的展示。设置完游戏栏目后删除 **文档** 中的 **捕获**。
+
+|     |
+| --- |
+| **表 1** |
+| ↑ 备注 | 名称  |
+| 　 （软件图标）（分类） | （软件名） |
+| 　  (临时) | *Microsoft Office* |
+| 　  文档 | *冰点文库* |
+| 　  下载 | *Internet Download Manager* |
+| 　  音乐 | *Windows Media Player* |
+
+|     |
+| --- |
+| **表 2** |
+| 备注  | ↑ 名称 |
+| 　 （软件图标） （原标识） | （关键词） |
+| 　  *将接收图像保存在此位置* | *接收图像* |
+| 　  *将接收文件保存在此位置* | *接收文件* |
