@@ -58,7 +58,7 @@ prism:
     - bash 
   plugins: 
 
-google_analytics: ""  # google analytics code
+google_analytics: "G-DEZSMPJ3GR"  # google analytics code
 
 lang: "zh-CN"  # lang
 
