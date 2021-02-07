@@ -25,3 +25,6 @@ exclude:
   - LICENSE.txt
   - README.md
   - vendor
+
+gems:
+  - jekyll-feed
