@@ -10,7 +10,10 @@
 - name: 友链
   url: /pages/friends.html
   icon: "&#xe8a3;"
-- name: 编辑器
+- name: 关于
+  url: https://www.runz.tk/
+  icon: "&#xe7fd;"
+- name: 编辑
   url: /pages/editor.html
   icon: "brush"
 - name: navSearch
