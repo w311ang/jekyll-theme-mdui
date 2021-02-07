@@ -3,7 +3,7 @@ layout: post
 title: 有史以来最全的vivo Y51系列刷机包大全（最终版）
 date: 2019-10-04 22:37:12 +0800
 categories: technology
-tags: vivoy51 刷机包 魔趣 
+tags: vivoy51 刷机包 魔趣 MIUI CM ColorOS Flyme FIUI LiquidUI LineageOS RR Magisk recovery funtouchos 卡刷包 线刷包
 img: 
 ---
 #vivoY51# 酷安吞评严重，我就一个图文尽量发完吧，各位见谅。关于其他细节我都留在原图文 https://www.coolapk.com/feed/14112852 了。如果发现有错误的地方欢迎指正，非常感谢！这可能是最终版了，欢迎各位有志之士再继续更新。
