@@ -547,3 +547,5 @@ for /r %f in (\) do chml "%f" -rl
 | 　 （软件图标） （原标识） | （关键词） |
 | 　  *将接收图像保存在此位置* | *接收图像* |
 | 　  *将接收文件保存在此位置* | *接收文件* |
+
+[查看原文](https://www.evernote.com/shard/s359/sh/c184f84d-fbb4-4cbc-983b-0965fd36e6c3/c38cbad2d0cc4e811c03d44d783a3453)
