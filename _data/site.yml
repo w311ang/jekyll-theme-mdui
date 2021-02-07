@@ -48,8 +48,8 @@ comment:
   client_id: ""
   client_secret: ""
   #valine config
-  valine_app_id: 'xtecO2ITHIf4a1AHJtdE87A0-MdYXbMMI'
-  valine_app_key: 'u5i0BKq09ydgO86WxQBrFIMB'
+  valine_app_id: "xtecO2ITHIf4a1AHJtdE87A0-MdYXbMMI"
+  valine_app_key: "u5i0BKq09ydgO86WxQBrFIMB"
   valine_placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!"
 
 prism:
