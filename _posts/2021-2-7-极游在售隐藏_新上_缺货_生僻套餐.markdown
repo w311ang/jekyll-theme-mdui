@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 极游隐藏/新上/缺货/生僻套餐
+title: 极游历史套餐
 date: 2020-04-12 22:20:08 +0800
 categories: technology
 tags: 极游 机场 v2ray 
