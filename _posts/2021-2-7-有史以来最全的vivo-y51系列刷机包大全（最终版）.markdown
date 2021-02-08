@@ -100,7 +100,7 @@ img:
 
 作者：[shahnawaz_sheikh](https://forum.xda-developers.com/member.php?u=7896540)
 
-已知问题：OTG不可用。
+已知问题：OTG不可用
 
 备注：
 
