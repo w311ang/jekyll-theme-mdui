@@ -10,6 +10,8 @@ img:
 
 如果发现有错误的地方欢迎指正，非常感谢！这可能是最终版了，欢迎各位有志之士再继续更新
 
+**类原生安卓5不能安装Xposed Installer，否则会无限闪屏！！！**
+
 ## MIUI
 
 ### [MIUI 9.2.5（Android 5.1）](https://forum.xda-developers.com/android/development/unofficial-t3795135)
@@ -23,6 +25,11 @@ img:
 ### [MIUI 9.2.3（Android 5.1）](https://www.coolapk.com/feed/11650835)
 
 作者：[@一人一车一世界](http://www.coolapk.com/u/1187163)
+
+已知问题：
+1. 可能会内存溢出，因为不会自动清理内存，导致手机卡死
+2. C版：闪光灯（第三方应用可用）、陀螺仪（我的貌似没这问题）均不可用
+3. A版：陀螺仪不可用，“系统升级”应用无法重启到Recovery
 
 备注：
 
@@ -80,7 +87,7 @@ img:
 
 作者：[@一人一车一世界](http://www.coolapk.com/u/1187163)
 
-已知问题：指南针不可用，“系统升级”应用无法重启到Recovery
+已知问题：陀螺仪不可用，“系统升级”应用无法重启到Recovery
 
 备注：仅限A版
 
@@ -303,6 +310,8 @@ PD1510_C_3.8.3-update-full.zip [盘搜搜1](http://www.pansoso.org/file/djcu4.ht
 [@一人一车一世界](https://www.coolapk.com/feed/13107903)
 
 [@Mintimate](https://www.coolapk.com/feed/7994304)
+
+[WiFi修复补丁](https://www.coolapk.com/feed/7994304)
 
 ## 相关群聊
 
