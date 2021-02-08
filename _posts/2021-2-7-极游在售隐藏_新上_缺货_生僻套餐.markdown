@@ -6,7 +6,7 @@ categories: technology
 tags: 极游 机场 v2ray 
 img: https://i.loli.net/2021/02/07/KsOHCV52UXPdg31.png
 ---
-此处记录了~~极游~~（R.I.P）所有的套餐，以及上下架情况
+~~极游~~（R.I.P）所有的套餐，以及上下架情况
 
 - [网络加速](https://jiyou.world/cart.php?gid=1)
 - [RBQ_CLOUD_SHNAT](https://jiyou.world/cart.php?gid=2)
