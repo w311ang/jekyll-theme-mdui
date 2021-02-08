@@ -282,44 +282,44 @@ img:
 
 [PD1510_C_4.20.0_vivo_qcom9008_LA.BR.1.1.3.c14-04_5.1.1.zip](http://url88.cn/UFgyOZ)（非原厂有预装）
 
-[PD1510_C_3.8.3_vivo_qcom_LA.BR.1.1.3.c14-04700-8x16.0_msm8939.tar.gz](https://www.relaycn.com/resources/45e9639beb3ae61d.html) [盘搜搜1](http://www.pansoso.org/file/ery6q.html) [盘搜搜2](http://www.pansoso.org/file/erxfd.html) [盘搜搜3](http://www.pansoso.org/file/djcuh.html) [盘搜搜4](http://www.pansoso.org/file/sl8a3.html)
+PD1510_C_3.8.3_vivo_qcom_LA.BR.1.1.3.c14-04700-8x16.0_msm8939.tar.gz [盘搜搜1](https://www.relaycn.com/resources/45e9639beb3ae61d.html) [2](http://www.pansoso.org/file/ery6q.html) [3](http://www.pansoso.org/file/erxfd.html) [4](http://www.pansoso.org/file/djcuh.html) [5](http://www.pansoso.org/file/sl8a3.html)
 
-----------【原厂卡刷包】----------
+## 原厂卡刷包
 
-http://www.vivo.com.cn/upgrade/detail?modelId=48 
+[vivo官网](http://www.vivo.com.cn/upgrade/detail?modelId=48)
 
-PD1510_C_4.21.1-update-full_1551258710.zip http://sysupwrdl.vivo.com.cn/upgrade/official/officialFiles/PD1510_C_4.21.1-update-full_1551258710.zip 
+[PD1510_C_4.21.1-update-full_1551258710.zip](http://sysupwrdl.vivo.com.cn/upgrade/official/officialFiles/PD1510_C_4.21.1-update-full_1551258710.zip)
 
-PD1510_C_4.17.2-update-full.zip http://sysupwsdl.vivo.com.cn/upgrade/upload/UpdateFiles/PD1510_C_4.17.2-update-full.zip 
+[PD1510_C_4.17.2-update-full.zip](http://sysupwsdl.vivo.com.cn/upgrade/upload/UpdateFiles/PD1510_C_4.17.2-update-full.zip)
 
-PD1510_C_3.8.3-update-full.zip http://www.pansoso.org/file/djcu4.html http://www.pansoso.org/file/t51wo.html https://www.yunpanjingling.com/resources/5bb594954b3f417336330a72 
+PD1510_C_3.8.3-update-full.zip [盘搜搜1](http://www.pansoso.org/file/djcu4.html) [2](http://www.pansoso.org/file/t51wo.html) [云盘精灵](https://www.yunpanjingling.com/resources/5bb594954b3f417336330a72)
 
-----------【友链】----------
+## 相关链接
 
-Vivo Y51系列第三方包 https://www.mintimate.cn/2019/06/21/Y51/ 
+[Vivo Y51系列第三方包](https://www.mintimate.cn/2019/06/21/Y51/)
 
-XDA Developers https://forum.xda-developers.com/t/vivo-y51l 
+[XDA Developers](https://forum.xda-developers.com/t/vivo-y51l)
 
-@一人一车一世界 https://www.coolapk.com/feed/13107903 
+[@一人一车一世界](https://www.coolapk.com/feed/13107903)
 
-@Mintimate https://www.coolapk.com/feed/7994304 
+[@Mintimate](https://www.coolapk.com/feed/7994304)
 
-----------【相关群聊】----------
+## 相关群聊
 
-TG『VIVO』 https://t.me/vivodev 
+[VIVO](https://t.me/vivodev)
 
-TG『Vivo Community(CN)』 https://t.me/joinchat/HpD_JRRvRN-SIfKWMVM6ow 
+[Vivo Community(CN)](https://t.me/joinchat/HpD_JRRvRN-SIfKWMVM6ow)
 
-QQ『vivo Y51』 https://jq.qq.com/?_wv=1027&k=5weDFx4 
+[vivo Y51](https://jq.qq.com/?_wv=1027&k=5weDFx4)
 
-QQ『vivo技术交流群』 https://jq.qq.com/?_wv=1027&k=5DTYcSw 
+[vivo技术交流群](https://jq.qq.com/?_wv=1027&k=5DTYcSw)
 
-QQ『VIVO-Y51』 https://jq.qq.com/?_wv=1027&k=5oRO8pM 
+[VIVO-Y51](https://jq.qq.com/?_wv=1027&k=5oRO8pM)
 
-----------【相关资料】----------
+## 相关资料
 
-开放源代码 https://forum.xda-developers.com/android/development/gift-vivo-y51-developer-t3880213 
+[开放源代码](https://forum.xda-developers.com/android/development/gift-vivo-y51-developer-t3880213)
 
-Magisk手动安装 https://forum.xda-developers.com/android/development/root-root-vivo-y51l-t3744877 
+[Magisk手动安装](https://forum.xda-developers.com/android/development/root-root-vivo-y51l-t3744877)
 
 [查看原文](https://www.coolapk.com/feed/14138281?shareKey=OGIyNGNjY2VmMDJlNWU1MmFkMDI~)
