@@ -8,7 +8,7 @@ img: https://i.loli.net/2021/02/07/pCyZK6awOlJMobV.png
 ---
 文字介绍摘取自毒药博客[https://www.duyaoss.com/archives/3/](https://www.duyaoss.com/archives/3/)，测速图由自己测得，家宽手机测速仅供参考
 
-### 1. 喵帕斯
+## 1. 喵帕斯
 
 - 3级：60元/月，330元/半年，60+线路，无限流量，每日总IP时长60小时；增加花卷中港iplc
 - 四月中旬3级套餐大概涨价，预计调整后价格为： 80/月 ，420/半年，720/年
