@@ -94,7 +94,7 @@ img:
 
 备注：[旧版](https://forum.xda-developers.com/android/software/port-t3792169)
 
-## CynogenMod
+## CM
 
 ### [CynogenMod 12.1（Android 5.1）](https://forum.xda-developers.com/android/software/port-cynogenmod-12-1-vivo-y51l-t3738412)
 
@@ -142,131 +142,133 @@ img:
 
 ### [Flyme 5（Android 5.1）](https://www.mintimate.cn/2019/06/21/Y51/)
 
-作者：@愛殇璃 @Mintimate
+作者：[@愛殇璃](http://www.coolapk.com/u/1739829) [@Mintimate](http://www.coolapk.com/u/1009160)
 
-已知问题：SIM卡仅支持单卡。
-
-备注：
-
-1. 已添加超级授权SuperSU；
-
-2. @Mintimate 所使用的Flyme主题是需要付费的《Pure 轻雨 http://theme.flyme.cn/themes/public/detail?package_name=com.meizu.theme.darenpureqingyu.eipacl4y&mzos=5.0 》。
-
-3. 感谢@Mintimate 提供他所使用的渐变壁纸 https://www.lanzous.com/i6k4bfg 。
-
-----------【FIUI】----------
-
-FIUI（Android 5.1） https://forum.xda-developers.com/android/development/unofficial-fiui-vivo-y51-y21l-t3837414 
-
-作者：kumarayush2104（Ayush Kumar） https://forum.xda-developers.com/member.php?u=8879074 
-
-----------【Liquid UI】----------
-
-Liquid UI是Acer（宏基）手机的手机操作系统。
-
-Liquid UI（Android 5.1） https://forum.xda-developers.com/android/development/port-acer-liquid-rom-vivo-y51l-t3853994 
-
-作者：shahnawaz_sheikh https://forum.xda-developers.com/member.php?u=7896540 
-
-已知问题：OTG、蓝牙、闪光灯均不可用。
-
-----------【LineageOS】----------
-
-LineageOS 15.1（Android 8.1） https://youtu.be/ctJadMA6gW8 
-
-作者：ketut.kumajaya https://forum.xda-developers.com/member.php?u=4021423 
+已知问题：SIM卡仅支持单卡
 
 备注：
 
-1. 正常工作的仅有触摸屏、显示、麦克风、消息、耳机中的音频、网络（无互联网）、USB；
+1. 已添加超级授权SuperSU
 
-2. 刷入请使用专用TWRP。
+2. [@Mintimate](http://www.coolapk.com/u/1009160)所使用的Flyme主题是需要付费的《[Pure 轻雨](http://theme.flyme.cn/themes/public/detail?package_name=com.meizu.theme.darenpureqingyu.eipacl4y&mzos=5.0)》
 
-----------【RR】----------
+3. 感谢[@Mintimate](http://www.coolapk.com/u/1009160)提供他所使用的[渐变壁纸](https://www.lanzous.com/i6k4bfg)
 
-Resurrection Remix OS（Android 5.1） https://forum.xda-developers.com/android/development/ressurection-remix-vivo-y51-y21l-t3840609 
+## FIUI
 
-作者：kumarayush2104（Ayush Kumar） https://forum.xda-developers.com/member.php?u=8879074 
+### [FIUI（Android 5.1）](https://forum.xda-developers.com/android/development/unofficial-fiui-vivo-y51-y21l-t3837414)
+
+作者：[kumarayush2104（Ayush Kumar）](https://forum.xda-developers.com/member.php?u=8879074)
+
+## Liquid UI
+
+*Liquid UI是Acer（宏基）手机的手机操作系统*
+
+### [Liquid UI（Android 5.1）](https://forum.xda-developers.com/android/development/port-acer-liquid-rom-vivo-y51l-t3853994)
+
+作者：[shahnawaz_sheikh](https://forum.xda-developers.com/member.php?u=7896540)
+
+已知问题：OTG、蓝牙、闪光灯均不可用
+
+## LineageOS
+
+### [LineageOS 15.1（Android 8.1）](https://youtu.be/ctJadMA6gW8)
+
+作者：[ketut.kumajaya](https://forum.xda-developers.com/member.php?u=4021423)
+
+备注：
+
+1. 正常工作的仅有触摸屏、显示、麦克风、消息、耳机中的音频、网络（无互联网）、USB
+
+2. 刷入请使用专用TWRP
+
+## RR
+
+### [Resurrection Remix OS（Android 5.1）](https://forum.xda-developers.com/android/development/ressurection-remix-vivo-y51-y21l-t3840609)
+
+作者：[kumarayush2104（Ayush Kumar）](https://forum.xda-developers.com/member.php?u=8879074)
 
 已知问题：
 
-1. 每次重新启动后“设置”将强制停止一次；
+1. 每次重新启动后“设置”将强制停止一次
 
-2. 某些应用将会崩溃（Xender），而使用修改的应用将可以正常运行。
+2. 某些应用将会崩溃（Xender），而使用修改的应用将可以正常运行
 
-3. Magisk https://forum.xda-developers.com/android/development/root-root-vivo-y51l-t3744877 
-
-
-
-TipsyOs（Android 5.1） https://forum.xda-developers.com/android/development/root-root-vivo-y51l-t3744877 https://youtu.be/omUggCUJGGk 
-
-作者：Naveen Singh https://forum.xda-developers.com/member.php?u=7473496 
-
-备注：
-
-1. 已添加Magisk；
-
-2. 我刷入之后“NFC服务”疯狂闪退。[doge笑哭]
-
-----------【Recovery】----------
-
-TWRP 3.3.1 https://www.coolapk.com/feed/12884976 
-
-作者：@愛殇璃
+3. [Magisk](https://forum.xda-developers.com/android/development/root-root-vivo-y51l-t3744877)
 
 
 
-TWRP 3.2.1 https://forum.xda-developers.com/general/rooting-roms/twrp-recovery-vivo-y51l-t3692376 
+### [TipsyOs（Android 5.1）](https://forum.xda-developers.com/android/development/root-root-vivo-y51l-t3744877)
+[YouTube](https://youtu.be/omUggCUJGGk)
 
-作者：Naveen Singh https://forum.xda-developers.com/member.php?u=7473496 
-
-备注：OTG已修复。
-
-
-
-LineageOS TWRP https://youtu.be/ctJadMA6gW8 
-
-作者：Linux Authority https://www.youtube.com/channel/UCJODsOoffoHm5GS9eW9SekA 
-
-备注：我个人Y51n遇到的问题就是触摸屏乱跳。[doge笑哭]
-
-
-
-奇兔Recovery https://www.coolapk.com/feed/9899909 
-
-作者：@一人一车一世界
-
-----------【Funtouch OS（官改）】----------
-
-PD1510F_EX_C2.6.13 https://forum.xda-developers.com/android/development/rom-stock-deodexed-rom-vivo-y51l-t3748993 
-
-作者：shahnawaz_sheikh https://forum.xda-developers.com/member.php?u=7896540 
-
-
-
-PD1510_C_3.8.3 https://www.coolapk.com/feed/12153624 
-
-作者：@一人一车一世界 @Mintimate
+作者：[Naveen Singh](https://forum.xda-developers.com/member.php?u=7473496)
 
 备注：
 
-1. 仅限C版；
+1. 已添加Magisk
 
-2. 可自行使用KingRoot获取root权限；
+2. 我刷入之后“NFC服务”疯狂闪退🤣
 
-3. 链接已失效，但可从此处 https://www.coolapk.com/feed/13107903 下载，也可从 https://www.mintimate.cn/2019/06/21/Y51/ 下载。
+## Recovery
 
+### [TWRP 3.3.1](https://www.coolapk.com/feed/12884976)
 
-
-Funtouch OS（Android 5.1） https://www.coolapk.com/feed/13107903 https://www.mintimate.cn/2019/06/21/Y51/ 
-
-作者：@一人一车一世界 @Mintimate
-
-备注：因使用后期内核，故无法root。
+作者：[@愛殇璃](http://www.coolapk.com/u/1739829)
 
 
 
-PD1510_C_4.13.4 https://www.coolapk.com/feed/11766404 
+### [TWRP 3.2.1](https://forum.xda-developers.com/general/rooting-roms/twrp-recovery-vivo-y51l-t3692376)
+
+作者：[Naveen Singh](https://forum.xda-developers.com/member.php?u=7473496)
+
+备注：OTG已修复
+
+
+
+### [LineageOS TWRP](https://youtu.be/ctJadMA6gW8)
+
+作者：[Linux Authority](https://www.youtube.com/channel/UCJODsOoffoHm5GS9eW9SekA)
+
+备注：我个人Y51n遇到的问题就是触摸屏乱跳🤣
+
+
+
+### [奇兔Recovery](https://www.coolapk.com/feed/9899909)
+
+作者：[@一人一车一世界](http://www.coolapk.com/u/1187163)
+
+## Funtouch OS（官改）
+
+### [PD1510F_EX_C2.6.13](https://forum.xda-developers.com/android/development/rom-stock-deodexed-rom-vivo-y51l-t3748993)
+
+作者：[shahnawaz_sheikh](https://forum.xda-developers.com/member.php?u=7896540)
+
+
+
+### [PD1510_C_3.8.3](https://www.coolapk.com/feed/12153624)
+
+作者：[@一人一车一世界](http://www.coolapk.com/u/1187163) [@Mintimate](http://www.coolapk.com/u/1009160)
+
+备注：
+
+1. 仅限C版
+
+2. 可自行使用KingRoot获取root权限
+
+3. 链接已失效，但可从[此处](https://www.coolapk.com/feed/13107903)下载，也可从此处(https://www.mintimate.cn/2019/06/21/Y51/)下载
+
+
+
+### [Funtouch OS（Android 5.1）](https://www.coolapk.com/feed/13107903)
+[Mintimate's Blog](https://www.mintimate.cn/2019/06/21/Y51/)
+
+作者：[@一人一车一世界](http://www.coolapk.com/u/1187163) [@Mintimate](http://www.coolapk.com/u/1009160)
+
+备注：因使用后期内核，故无法root
+
+
+
+### [PD1510_C_4.13.4](https://www.coolapk.com/feed/11766404)
 
 作者：@一人一车一世界
 
