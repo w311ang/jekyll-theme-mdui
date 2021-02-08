@@ -1,46 +1,48 @@
 ---
 layout: post
-title: 有史以来最全的vivo Y51系列刷机包大全（最终版）
+title: 有史以来最全的vivo Y51系列刷机包大全
 date: 2019-10-04 22:37:12 +0800
 categories: technology
 tags: vivoy51 刷机包 魔趣 MIUI CM ColorOS Flyme FIUI LiquidUI LineageOS RR Magisk recovery funtouchos 卡刷包 线刷包
 img: 
 ---
-#vivoY51# 酷安吞评严重，我就一个图文尽量发完吧，各位见谅。关于其他细节我都留在原图文 https://www.coolapk.com/feed/14112852 了。如果发现有错误的地方欢迎指正，非常感谢！这可能是最终版了，欢迎各位有志之士再继续更新。
+原酷安独家内容，现被我翻新到我的博客，不信可以点底部查看原文
 
-----------【MIUI】----------
+如果发现有错误的地方欢迎指正，非常感谢！这可能是最终版了，欢迎各位有志之士再继续更新
 
-MIUI 9.2.5（Android 5.1） https://forum.xda-developers.com/android/development/unofficial-t3795135 
+## MIUI
 
-作者：kumarayush2104（Ayush Kumar） https://forum.xda-developers.com/member.php?u=8879074 
+### [MIUI 9.2.5（Android 5.1）](https://forum.xda-developers.com/android/development/unofficial-t3795135)
 
-已知问题：闪光灯（可使用第三方应用）不可用。
+作者：[kumarayush2104（Ayush Kumar）](https://forum.xda-developers.com/member.php?u=8879074)
+
+已知问题：闪光灯（可使用第三方应用）不可用
 
 
 
-MIUI 9.2.3（Android 5.1） https://www.coolapk.com/feed/11650835 
+### [MIUI 9.2.3（Android 5.1）](https://www.coolapk.com/feed/11650835)
 
-作者：@一人一车一世界
+作者：[@一人一车一世界](http://www.coolapk.com/u/1187163)
 
 备注：
 
-1. A版、C版链接已失效，但C版可从此处 https://www.coolapk.com/feed/13107903 下载；
+1. A版、C版链接已失效，但C版可从[此处](https://www.coolapk.com/feed/13107903)下载
 
-2. @Mintimate 定制的博客特别版本 https://www.mintimate.cn/2019/06/21/Y51/ ；
+2. [@Mintimate](http://www.coolapk.com/u/1009160)定制的博客[特别版本](https://www.mintimate.cn/2019/06/21/Y51/)
 
-3. KingRoot https://t.me/vivodev/8161 。
-
-
-
-MIUI 9.1.4（Android 5.1） https://www.coolapk.com/feed/9899909 
-
-作者：@一人一车一世界
-
-备注：已添加KingRoot。
+3. [KingRoot](https://t.me/vivodev/8161)
 
 
 
-MIUI 9 7.11.16（Android 5.1） https://forum.xda-developers.com/android/development/miui-9-vivo-y51l-t3722621 
+### [MIUI 9.1.4（Android 5.1）](https://www.coolapk.com/feed/9899909)
+
+作者：[@一人一车一世界](http://www.coolapk.com/u/1187163)
+
+备注：已添加KingRoot
+
+
+
+### [MIUI 9 7.11.16（Android 5.1）](https://forum.xda-developers.com/android/development/miui-9-vivo-y51l-t3722621)
 
 作者：Naveen Singh https://forum.xda-developers.com/member.php?u=7473496 
 
