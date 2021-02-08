@@ -6,6 +6,8 @@ categories: technology
 tags: 
 img: 
 ---
-格式复杂，无法人力转换md，戳查看原文
+准备工作，准备安装密钥，将安装镜像刻录到U盘，BIOS启用虚拟化，导出Chrome书签，使用TU备份完整VB，TU导出已安装程序
+
+详细戳查看原文
 
 [查看原文](https://www.evernote.com/shard/s359/sh/c184f84d-fbb4-4cbc-983b-0965fd36e6c3/c38cbad2d0cc4e811c03d44d783a3453)
