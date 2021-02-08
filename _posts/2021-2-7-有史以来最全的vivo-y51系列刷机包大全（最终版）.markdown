@@ -44,103 +44,103 @@ img:
 
 ### [MIUI 9 7.11.16（Android 5.1）](https://forum.xda-developers.com/android/development/miui-9-vivo-y51l-t3722621)
 
-作者：Naveen Singh https://forum.xda-developers.com/member.php?u=7473496 
+作者：[Naveen Singh](https://forum.xda-developers.com/member.php?u=7473496)
 
-已知问题：移动数据、OTG、闪光灯（可使用第三方应用）均不可用；
+已知问题：移动数据、OTG、闪光灯（可使用第三方应用）均不可用
 
-备注：KingRoot https://youtu.be/dshjCSErtzE https://youtu.be/7j8cyzpj-j0 。
-
-
-
-MIUI 8.5（Android 5.1） https://forum.xda-developers.com/android/software/miui-vivo-y51-y21-y51l-y21l-t3792559 
-
-作者：kumarayush2104（Ayush Kumar） https://forum.xda-developers.com/member.php?u=8879074 
-
-已知问题：OTG、闪光灯（可使用第三方应用）均不可用，首次启动桌面图标混乱。
-
-备注：可通过补丁修复互联网、相机的问题。
+备注：[KingRoot](https://youtu.be/dshjCSErtzE)和[KingRoot](https://youtu.be/7j8cyzpj-j0)
 
 
 
-MIUI 8（Android 5.1） https://forum.xda-developers.com/android/software/unofficial-t3790277 
+### [MIUI 8.5（Android 5.1）](https://forum.xda-developers.com/android/software/miui-vivo-y51-y21-y51l-y21l-t3792559)
 
-作者：kumarayush2104（Ayush Kumar） https://forum.xda-developers.com/member.php?u=8879074 
+作者：[kumarayush2104（Ayush Kumar）](https://forum.xda-developers.com/member.php?u=8879074)
 
-已知问题：OTG、闪光灯（可使用第三方应用）均不可用，首次启动桌面图标混乱。
+已知问题：OTG、闪光灯（可使用第三方应用）均不可用，首次启动桌面图标混乱
+
+备注：可通过补丁修复互联网、相机的问题
+
+
+
+### [MIUI 8（Android 5.1）](https://forum.xda-developers.com/android/software/unofficial-t3790277)
+
+作者：[kumarayush2104（Ayush Kumar）](https://forum.xda-developers.com/member.php?u=8879074)
+
+已知问题：OTG、闪光灯（可使用第三方应用）均不可用，首次启动桌面图标混乱
 
 备注：
 
-1. 可通过补丁修复相机、地区的问题；
+1. 可通过补丁修复相机、地区的问题
 
-2. 必须安装第三方音乐应用。
-
-
-
-MIUI 7 6.1.26（Android 5.1） https://www.coolapk.com/feed/11710642 
-
-作者：@一人一车一世界
-
-已知问题：指南针不可用，“系统升级”应用无法重启到Recovery。
-
-备注：仅限A版。
+2. 必须安装第三方音乐应用
 
 
 
-MIUI 7（Android 5.1） https://forum.xda-developers.com/android/software-hacking/miui-7-vivo-y51-y21l-t3836675 
+### [MIUI 7 6.1.26（Android 5.1）](https://www.coolapk.com/feed/11710642)
 
-作者：kumarayush2104（Ayush Kumar） https://forum.xda-developers.com/member.php?u=8879074 
+作者：[@一人一车一世界](http://www.coolapk.com/u/1187163)
 
-已知问题：OTG、闪光灯（可使用第三方应用）均不可用。
+已知问题：指南针不可用，“系统升级”应用无法重启到Recovery
 
-备注：旧版 https://forum.xda-developers.com/android/software/port-t3792169 。
+备注：仅限A版
 
-----------【CM】----------
 
-CynogenMod 12.1（Android 5.1） https://forum.xda-developers.com/android/software/port-cynogenmod-12-1-vivo-y51l-t3738412 
 
-作者：shahnawaz_sheikh https://forum.xda-developers.com/member.php?u=7896540 
+### [MIUI 7（Android 5.1）](https://forum.xda-developers.com/android/software-hacking/miui-7-vivo-y51-y21l-t3836675)
+
+作者：[kumarayush2104（Ayush Kumar）](https://forum.xda-developers.com/member.php?u=8879074)
+
+已知问题：OTG、闪光灯（可使用第三方应用）均不可用
+
+备注：[旧版](https://forum.xda-developers.com/android/software/port-t3792169)
+
+## CynogenMod
+
+### [CynogenMod 12.1（Android 5.1）](https://forum.xda-developers.com/android/software/port-cynogenmod-12-1-vivo-y51l-t3738412)
+
+作者：[shahnawaz_sheikh](https://forum.xda-developers.com/member.php?u=7896540)
 
 已知问题：OTG不可用。
 
 备注：
 
-1. 旧版 https://forum.xda-developers.com/android/general/port-unofficial-cm12-1-vivo-y51l-t3714329 ；
+1. [旧版](https://forum.xda-developers.com/android/general/port-unofficial-cm12-1-vivo-y51l-t3714329)
 
-2. 通过boot.img获得root权限 https://forum.xda-developers.com/android/software-hacking/experiment-how-to-root-access-vivo-y51l-t3744508 。
-
-
-
-CynogenMod 12.1（Android 5.1） https://forum.xda-developers.com/android/software-hacking/cm-12-1-vivo-y51-y51l-t3827666 
-
-作者：kumarayush2104（Ayush Kumar） https://forum.xda-developers.com/member.php?u=8879074 
-
-备注：可通过补丁修复离线充电（关机充电）、MTP的问题。
-
-----------【魔趣】----------
-
-MoKee 51.1（Android 5.1） https://t.me/vivodev/11502 
-
-作者：Ayush Kumar（kumarayush2104） https://t.me/kumarayush2104 
-
-----------【ColorOS】----------
-
-ColorOS 2.1（Android 5.1） https://www.coolapk.com/feed/11481977 
-
-作者：@一人一车一世界
-
-已知问题：闪光灯（可使用第三方应用）、个人热点均不可用，SIM卡仅限电信卡，锁屏会自动进入防误触模式。
+2. [通过boot.img获得root权限](https://forum.xda-developers.com/android/software-hacking/experiment-how-to-root-access-vivo-y51l-t3744508)
 
 
 
-ColorOS（Android 5.1） https://t.me/vivodev/11455 
+[CynogenMod 12.1（Android 5.1）](https://forum.xda-developers.com/android/software-hacking/cm-12-1-vivo-y51-y51l-t3827666)
 
-作者：Ayush Kumar（kumarayush2104） https://t.me/kumarayush2104 
+作者：[kumarayush2104（Ayush Kumar）](https://forum.xda-developers.com/member.php?u=8879074)
 
-已知问题：OTG、某些摄像头模式均不可用。
+备注：可通过补丁修复离线充电（关机充电）、MTP的问题
 
-----------【Flyme】----------
+## 魔趣
 
-Flyme 5（Android 5.1） https://www.mintimate.cn/2019/06/21/Y51/ 
+### [MoKee 51.1（Android 5.1）](https://t.me/vivodev/11502)
+
+作者：[Ayush Kumar（kumarayush2104）](https://t.me/kumarayush2104)
+
+## ColorOS
+
+### [ColorOS 2.1（Android 5.1）](https://www.coolapk.com/feed/11481977)
+
+作者：[@一人一车一世界](http://www.coolapk.com/u/1187163)
+
+已知问题：闪光灯（可使用第三方应用）、个人热点均不可用，SIM卡仅限电信卡，锁屏会自动进入防误触模式
+
+
+
+### [ColorOS（Android 5.1）](https://t.me/vivodev/11455)
+
+作者：[Ayush Kumar（kumarayush2104）](https://t.me/kumarayush2104)
+
+已知问题：OTG、某些摄像头模式均不可用
+
+## Flyme
+
+### [Flyme 5（Android 5.1）](https://www.mintimate.cn/2019/06/21/Y51/)
 
 作者：@愛殇璃 @Mintimate
 
