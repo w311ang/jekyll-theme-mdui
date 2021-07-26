@@ -1,0 +1,5 @@
+version: "1"
+rules:
+  - base: build
+    upstream: KeJunMao:build    # change `wei` to the owner of upstream repo
+    mergeMethod: merge
